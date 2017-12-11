@@ -145,15 +145,15 @@ rural_city_rides_axis, rural_city_fare_axis, rural_city_driver_axis = city_type_
 plt.figure(figsize=(12,10))
 
 # urban plot
-plt.scatter(urban_city_rides_axis, urban_city_fare_axis,s=[x*5 for x in urban_city_driver_axis], 
+plt.scatter(urban_city_rides_axis, urban_city_fare_axis,s=[x*5 for x in urban_city_driver_axis],
                  edgecolors='black', facecolor='lightcoral', alpha=.6, zorder=3,  label='Urban')
 
 # suburban plot
-plt.scatter(suburban_city_rides_axis, suburban_city_fare_axis,s=[x*5 for x in suburban_city_driver_axis], 
+plt.scatter(suburban_city_rides_axis, suburban_city_fare_axis,s=[x*5 for x in suburban_city_driver_axis],
                  edgecolors='black', facecolor='lightskyblue', alpha=.6, zorder=3,  label='Suburban')
 
 # rural plot
-plt.scatter(rural_city_rides_axis, rural_city_fare_axis,s=[x*5 for x in rural_city_driver_axis], 
+plt.scatter(rural_city_rides_axis, rural_city_fare_axis,s=[x*5 for x in rural_city_driver_axis],
                  edgecolors='black', facecolor='gold', alpha=.6, zorder=3,  label='Rural')
 
 
@@ -182,7 +182,7 @@ plt.show()
 ```
 
 
-![png](output_8_0.png)
+![scatterplot chart](../images/output_8_0.png)
 
 
 ## Pie Charts for Percent Comparison
@@ -218,7 +218,7 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![pie chart](../images/output_13_0.png)
 
 
 ## Total Rides by City Type
@@ -234,7 +234,7 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
+![pie chart](../images/output_15_0.png)
 
 
 ## Total Drivers by City Type
@@ -250,5 +250,5 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![pie chart](../images/output_17_0.png)
 
