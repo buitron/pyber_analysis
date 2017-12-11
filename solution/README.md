@@ -1,9 +1,14 @@
 
 # Pyber Ride Sharing
 ## Analysis
-* Observed trend 1
-* Observed trend 2
-* Observed trend 3
+* The most clear observation made from the data provided is that there is a large difference, on average, in the amount of rides made amongts the three different city types provided.
+    * Urban cities use this service a lot more than the other two city types combined.
+    * There is a large demand for this this service which is demonstrated by the heavy use it, and as a result from the a high demand is the large supply of drivers.
+    * There may be a strong positive correlation between number of rides per city and drivers per city.
+* The fare costs vary vastly between the three city types.
+    * I believe that there may be a postive correlation between fare cost and distance driven to reach the final destination.
+    * There may also be a negative correlation between number of rides and miles driven per ride, which may indicate that this service is optimal for short duration rides. To further investigate this hypothesis I would need data on mileage or time spent per ride.
+* There are some outliers in this data that also needs to be explored, for instance there is a suburban city in this data that outperforms all of the cities, including all of the urban cities, in respect to the total number of rides provided. What is strange about this data point is that even though this city is number one in the amount of rides provided it has a very small amount of drivers providing those rides.
 
 
 ```python
@@ -140,15 +145,15 @@ rural_city_rides_axis, rural_city_fare_axis, rural_city_driver_axis = city_type_
 plt.figure(figsize=(12,10))
 
 # urban plot
-plt.scatter(urban_city_rides_axis, urban_city_fare_axis,s=[x*5 for x in urban_city_driver_axis],
+plt.scatter(urban_city_rides_axis, urban_city_fare_axis,s=[x*5 for x in urban_city_driver_axis], 
                  edgecolors='black', facecolor='lightcoral', alpha=.6, zorder=3,  label='Urban')
 
 # suburban plot
-plt.scatter(suburban_city_rides_axis, suburban_city_fare_axis,s=[x*5 for x in suburban_city_driver_axis],
+plt.scatter(suburban_city_rides_axis, suburban_city_fare_axis,s=[x*5 for x in suburban_city_driver_axis], 
                  edgecolors='black', facecolor='lightskyblue', alpha=.6, zorder=3,  label='Suburban')
 
 # rural plot
-plt.scatter(rural_city_rides_axis, rural_city_fare_axis,s=[x*5 for x in rural_city_driver_axis],
+plt.scatter(rural_city_rides_axis, rural_city_fare_axis,s=[x*5 for x in rural_city_driver_axis], 
                  edgecolors='black', facecolor='gold', alpha=.6, zorder=3,  label='Rural')
 
 
@@ -177,7 +182,7 @@ plt.show()
 ```
 
 
-![scatterplot chart](../images/output_8_0.png)
+![png](output_8_0.png)
 
 
 ## Pie Charts for Percent Comparison
@@ -206,14 +211,14 @@ explode = (0.1,0,0)
 ```python
 plt.figure(figsize=(6,6))
 plt.pie(zippidie_doo_dah[0], labels=labels, explode=explode, shadow=True, startangle=245,
-        autopct='%.2f%%', colors=colors)
+        autopct='%.2f%%', colors=colors, textprops={'fontsize':12})
 plt.title('% of Total Fares by City Type', size=16)
 plt.axis('equal')
 plt.show()
 ```
 
 
-![pie chart](../images/output_13_0.png)
+![png](output_13_0.png)
 
 
 ## Total Rides by City Type
@@ -222,28 +227,28 @@ plt.show()
 ```python
 plt.figure(figsize=(6,6))
 plt.pie(zippidie_doo_dah[1], labels=labels, explode=explode, shadow=True, startangle=240,
-        autopct='%.2f%%', colors=colors)
-plt.title('% of Total Fares by City Type')
+        autopct='%.2f%%', colors=colors, textprops={'fontsize':12})
+plt.title('% of Total Fares by City Type', size=16)
 plt.axis('equal')
 plt.show()
 ```
 
 
-![pie chart](../images/output_15_0.png)
+![png](output_15_0.png)
 
 
-## Total Rides by City Type
+## Total Drivers by City Type
 
 
 ```python
 plt.figure(figsize=(6,6))
 plt.pie(zippidie_doo_dah[2], labels=labels, explode=explode, shadow=True, startangle=220,
-        autopct='%.2f%%', colors=colors)
-plt.title('% of Total Fares by City Type')
+        autopct='%.2f%%', colors=colors, textprops={'fontsize':12})
+plt.title('% of Total Fares by City Type', size=16)
 plt.axis('equal')
 plt.show()
 ```
 
 
-![pie chart](../images/output_17_0.png)
+![png](output_17_0.png)
 
