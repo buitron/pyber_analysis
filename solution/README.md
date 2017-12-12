@@ -40,85 +40,13 @@ city_ride_df = pd.merge(ride_df, city_df, how='outer', on='city', sort=True)
 city_ride_df.head()
 ```
 
-
-
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>city</th>
-      <th>date</th>
-      <th>fare</th>
-      <th>ride_id</th>
-      <th>driver_count</th>
-      <th>type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Alvarezhaven</td>
-      <td>2016-04-18 20:51:29</td>
-      <td>31.93</td>
-      <td>4267015736324</td>
-      <td>21</td>
-      <td>Urban</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Alvarezhaven</td>
-      <td>2016-08-01 00:39:48</td>
-      <td>6.42</td>
-      <td>8394540350728</td>
-      <td>21</td>
-      <td>Urban</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Alvarezhaven</td>
-      <td>2016-09-01 22:57:12</td>
-      <td>18.09</td>
-      <td>1197329964911</td>
-      <td>21</td>
-      <td>Urban</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Alvarezhaven</td>
-      <td>2016-08-18 07:12:06</td>
-      <td>20.74</td>
-      <td>357421158941</td>
-      <td>21</td>
-      <td>Urban</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Alvarezhaven</td>
-      <td>2016-04-04 23:45:50</td>
-      <td>14.25</td>
-      <td>6431434271355</td>
-      <td>21</td>
-      <td>Urban</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+|   | city | date | fare | ride_id | driver_count | type |
+|---|------|------|------|---------|--------------|------|
+| 0 | Alvarezhaven | 2016-04-18 20:51:29 | 31.93 | 4267015736324 | 21 | Urban |
+| 1 | Alvarezhaven | 2016-08-01 00:39:48 | 6.42 | 8394540350728 | 21 | Urban |
+| 2 | Alvarezhaven | 2016-09-01 22:57:12 | 18.09 | 1197329964911 | 21 | Urban |
+| 3 | Alvarezhaven | 2016-08-18 07:12:06 | 20.74 | 357421158941 | 21 | Urban |
+| 4 | Alvarezhaven | 2016-04-04 23:45:50 | 14.25 | 6431434271355 | 21 | Urban |
 
 
 ## Bubble Plot of Ride Sharing Data
